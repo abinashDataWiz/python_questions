@@ -9,4 +9,9 @@ Branches are for students
 
 ## Structure 
 
-
+python_questions/
+├── docs/
+│   └── Git Help
+├── questions/
+│   └── test.py
+└── README.md
