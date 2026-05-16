@@ -45,6 +45,12 @@ git stash
 git pull
 git pop
 ```
-Then you have to figure out the merge conflict by accepting incoming or your changes or both. 
+Then you have to figure out the merge conflict by accepting incoming or your changes or both.
+
+### Creating a new branch
+
+git checkout -b <branch-name>
+
+This creates a new branch and switches you to it
 
 
