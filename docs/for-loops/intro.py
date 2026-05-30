@@ -36,3 +36,15 @@ for i in range(n): # big for loop, loops n loops, 1 time
         for k in range(n2): # small for loop, has n2 loops, n x n2 times
             tally = tally + 1        # n x n2 x n2 times
 print(tally)
+
+
+tally = 0 
+for i in range(n):
+    for j in range(n2):
+        tally = tally + 1
+
+    for k in range(n):
+        for p in range(n):
+            tally = tally + 1
+
+print(tally)
