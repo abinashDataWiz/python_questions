@@ -26,7 +26,7 @@ for i in range(0,101):
     i = i + 10
 
 for i in range(1,1001):
-    if i % 2 == 0:
+    if i % 2 == 0: # if i is even
         print(i)
 n = int(input())
 n2 = int(input())
@@ -38,13 +38,37 @@ for i in range(n): # big for loop, loops n loops, 1 time
 print(tally)
 
 
+
+tally = 0
+for i in range(n):
+    tally+=1
+# tally = n
+for j in range(n2):
+    tally+=1
+
+print(tally) # n + n2
+
+
+
+n = int(input())
+n2 = int(input())
 tally = 0 
 for i in range(n):
     for j in range(n2):
         tally = tally + 1
 
     for k in range(n):
-        for p in range(n):
-            tally = tally + 1
+        tally = tally + 1
 
-print(tally)
+print(tally) # n x n2 + n x n = n x (n2 + n)
+
+# What if tally = n x (n2 + n x n)
+
+
+
+
+
+
+
+# Divide and conquer
+# n*(n^6 + n2) + n^2 *(n2 + n^3)
