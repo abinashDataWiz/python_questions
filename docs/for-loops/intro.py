@@ -20,7 +20,7 @@ for i in range(5, 8):
 # [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 for i in range(0,101, 10):
     print(i)
-
+# [0,1,2,3,4,5,6,7,8,9....,100]
 for i in range(0,101):
     print(i)
     i = i + 10
@@ -29,12 +29,12 @@ for i in range(1,1001):
     if i % 2 == 0: # if i is even
         print(i)
 n = int(input())
-n2 = int(input())
+p = int(input())
 tally = 0
 for i in range(n): # big for loop, loops n loops, 1 time
-    for j in range(n2): # med for loop, n times, n2 loops
-        for k in range(n2): # small for loop, has n2 loops, n x n2 times
-            tally = tally + 1        # n x n2 x n2 times
+    for j in range(p): # med for loop, n times, p loops
+        for k in range(p): # small for loop, has p loops, n x p times
+            tally = tally + 1        # n x p x p times
 print(tally)
 
 
@@ -42,27 +42,25 @@ print(tally)
 tally = 0
 for i in range(n):
     tally+=1
-# tally = n
-for j in range(n2):
+for j in range(p):
     tally+=1
 
 print(tally) # n + n2
 
 
-
 n = int(input())
-n2 = int(input())
+p = int(input())
 tally = 0 
 for i in range(n):
-    for j in range(n2):
+    for j in range(p):
         tally = tally + 1
 
     for k in range(n):
         tally = tally + 1
 
-print(tally) # n x n2 + n x n = n x (n2 + n)
+print(tally) # n x p + n x n = n x (p + n)
 
-# What if tally = n x (n2 + n x n)
+# What if tally = n x (p + n x n)
 
 
 
