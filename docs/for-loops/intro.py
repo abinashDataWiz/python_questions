@@ -50,8 +50,10 @@ print(tally) # n + n2
 
 n = int(input())
 p = int(input())
+p = int(input())
 tally = 0 
 for i in range(n):
+    for j in range(p):
     for j in range(p):
         tally = tally + 1
 
@@ -59,9 +61,13 @@ for i in range(n):
         tally = tally + 1
 
 print(tally) # n x p + n x n = n x (p + n)
+print(tally) # n x p + n x n = n x (p + n)
 
 # What if tally = n x (p + n x n)
 
+for i in range(n):
+    for i in range(p):
+        tally = tally + 1 
 for i in range(n):
     for i in range(p):
         tally = tally + 1 
@@ -69,7 +75,11 @@ for i in range(n):
     for i in range(n):
         for i in range(n):
             tally = tally + 1b
+    for i in range(n):
+        for i in range(n):
+            tally = tally + 1b
 
+print(tally)
 print(tally)
 
 
