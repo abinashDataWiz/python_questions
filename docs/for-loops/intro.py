@@ -51,21 +51,31 @@ print(tally) # n + n2
 
 
 n = int(input())
-n2 = int(input())
+p = int(input())
 tally = 0 
 for i in range(n):
-    for j in range(n2):
+    for j in range(p):
         tally = tally + 1
 
     for k in range(n):
         tally = tally + 1
 
-print(tally) # n x n2 + n x n = n x (n2 + n)
+print(tally) # n x p + n x n = n x (p + n)
 
-# What if tally = n x (n2 + n x n)
+# What if tally = n x (p + n x n)
+tally = 0
+n = 5
+p = 3
 
+for i in range(n):
+    for i in range(p):
+        tally = tally + 1 
 
+    for i in range(n):
+        for i in range(n):
+            tally = tally + 1b
 
+print(tally)
 
 
 
