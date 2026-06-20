@@ -62,8 +62,15 @@ print(tally) # n x p + n x n = n x (p + n)
 
 # What if tally = n x (p + n x n)
 
+for i in range(n):
+    for i in range(p):
+        tally = tally + 1 
 
+    for i in range(n):
+        for i in range(n):
+            tally = tally + 1b
 
+print(tally)
 
 
 
