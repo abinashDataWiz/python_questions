@@ -21,5 +21,5 @@ i = 0
 
 while i != 100:
     for j in range(i):
-        print("hello") # how many lines is this code running? 
+        print("hello") # how many times is this line running? 
     i+=1
