@@ -62,8 +62,27 @@ for i in range(n):
 
 print(tally) # n x n2 + n x n = n x (n2 + n)
 
-# What if tally = n x (n2 + n x n)
 
+
+# What if tally = n x (n2 + n x n) = n x n2 + n x n x n
+
+for i in range(n):
+    for a in range(n2):
+        tally = tally + 1
+    for s in range (n):
+        for b in range(n):
+            tally = tally + 1
+print (tally)
+
+
+for i in range(n):
+    for j in range(n2):
+        tally+=1
+
+for k in range(n):
+    for n in range(n):
+        for q in range(n):
+            tally+=1
 
 
 
