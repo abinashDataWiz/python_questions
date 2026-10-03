@@ -7,10 +7,17 @@ word = "emoji"
 guess = input()
 
 # Determine what the guess resulted in this format
-# For example if they put store
+# For example if they put "store"
 
 # Grey
 # Grey
 # Green
 # Grey
 # Yellow
+
+
+
+if "a" in "alice":
+    print("Yellow")
+
+    
